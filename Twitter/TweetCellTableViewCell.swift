@@ -27,6 +27,18 @@ class TweetCellTableViewCell: UITableViewCell {
     @IBAction func retweetTweet(_ sender: Any) {
     }
     
+    var favorited:Bool = false
+    func setFavorited(_ isFavorited:Bool){
+        
+        favorited = isFavorited
+        if(favorited){
+            favButton.setImage(UIImage(named: "favor-icon-red"), for: UIControl.State.normal)
+        }
+        else{
+            favButton.setImage(UIImage(named: "favor-icon"), for: UIControl.State.normal)
+        }
+        
+    }
     
     
     

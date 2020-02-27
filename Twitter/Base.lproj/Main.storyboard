@@ -76,21 +76,21 @@
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tweet Content" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nnh-ze-uvt">
-                                            <rect key="frame" x="89" y="37" width="270" height="20.5"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Tweet Content" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nnh-ze-uvt">
+                                            <rect key="frame" x="89" y="37" width="270" height="26"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vP5-nq-5wa" userLabel="fav">
-                                            <rect key="frame" x="335" y="109" width="30" height="30"/>
+                                            <rect key="frame" x="335" y="67.5" width="30" height="71.5"/>
                                             <state key="normal" image="favor-icon"/>
                                             <connections>
                                                 <action selector="favoriteTweet:" destination="rzC-kV-gin" eventType="touchUpInside" id="RoJ-Tx-eJ5"/>
                                             </connections>
                                         </button>
                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MVe-Hq-l45" userLabel="retweet">
-                                            <rect key="frame" x="285" y="109" width="30" height="30"/>
+                                            <rect key="frame" x="285" y="67.5" width="30" height="71.5"/>
                                             <state key="normal" image="retweet-icon"/>
                                             <connections>
                                                 <action selector="retweetTweet:" destination="rzC-kV-gin" eventType="touchUpInside" id="Gbh-CJ-oJy"/>
@@ -104,6 +104,8 @@
                                         <constraint firstItem="Nnh-ze-uvt" firstAttribute="top" secondItem="QXd-vI-UKF" secondAttribute="bottom" constant="4" id="A9E-nd-d2k"/>
                                         <constraint firstAttribute="bottom" secondItem="vP5-nq-5wa" secondAttribute="bottom" constant="10" id="Apz-ie-Erm"/>
                                         <constraint firstItem="vP5-nq-5wa" firstAttribute="leading" secondItem="MVe-Hq-l45" secondAttribute="trailing" constant="20" id="EzP-Pk-KWf"/>
+                                        <constraint firstItem="vP5-nq-5wa" firstAttribute="top" secondItem="Nnh-ze-uvt" secondAttribute="bottom" constant="10" id="Gfw-uc-Wi0"/>
+                                        <constraint firstItem="MVe-Hq-l45" firstAttribute="top" secondItem="Nnh-ze-uvt" secondAttribute="bottom" constant="10" id="RCG-xW-aRX"/>
                                         <constraint firstItem="QXd-vI-UKF" firstAttribute="top" secondItem="SLI-6h-bpe" secondAttribute="topMargin" id="W12-VA-CWy"/>
                                         <constraint firstItem="Nnh-ze-uvt" firstAttribute="trailing" secondItem="SLI-6h-bpe" secondAttribute="trailingMargin" id="YZG-1c-ZVr"/>
                                         <constraint firstItem="o6f-Jc-rZF" firstAttribute="top" secondItem="SLI-6h-bpe" secondAttribute="topMargin" id="Zhf-S3-HQ9"/>

@@ -1,7 +1,4 @@
 # Twitter Clone
-
-## User Stories
-
 - [X] User can compose a tweet.
 - [X] User can favorite a tweet.
 - [X] User can retweet a tweet.
